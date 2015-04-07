@@ -6,7 +6,7 @@ https://rubygems.org/gems/jellyfish-ldapauth
 #### Installation
 Include in Gemfile:
 ```
-  gem 'jellyfish-ldapauth'
+  gem 'jellyfish-ldapauth', git: 'https://github.com/projectjellyfish/jellyfish-ldapauth'
 ```
 
 Run the migration:
