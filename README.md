@@ -9,6 +9,12 @@ Include in Gemfile:
   gem 'jellyfish-ldapauth'
 ```
 
+Run the migration:
+```
+  rails generate jellyfish_ldapauth
+  rake db:migrate
+```
+
 Add settings to your .env file:
 ```
   LDAP_TITLE        = "Jellyfish LDAP Authentication"
@@ -24,10 +30,6 @@ Add settings to your .env file:
   LDAP_NAME_PROC    = "Proc.new {|name| name.gsub(/@.*$/,'')}"
   LDAP_FILTER       = (&(uid=%{username})(memberOf=cn=myapp-users,ou=groups,dc=example,dc=com))
 ```
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Development
 
