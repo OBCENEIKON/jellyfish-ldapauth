@@ -14,20 +14,14 @@ Gem::Specification.new do |s|
   s.description = 'An LDAP Authentication method for Project Jellyfish'
   s.license     = 'APACHE'
 
-  s.files = Dir['{app,config,db,lib}/**/*', 'LICENSE', 'Rakefile', 'README.md']
+  s.files = Dir['{config,lib}/**/*', 'LICENSE', 'Rakefile', 'README.md']
 
-  s.add_dependency 'rails'
-  s.add_dependency 'dotenv-rails'
-  s.add_dependency 'devise'
-  s.add_dependency 'omniauth'
-  s.add_dependency 'omniauth-ldap'
+  s.add_runtime_dependency 'rails'
+  s.add_runtime_dependency 'dotenv-rails'
+  s.add_runtime_dependency 'devise'
+  s.add_runtime_dependency 'omniauth'
+  s.add_runtime_dependency 'omniauth-ldap'
 
-  s.add_development_dependency 'rails'
-  s.add_development_dependency 'dotenv-rails'
-  s.add_development_dependency 'devise'
-  s.add_development_dependency 'omniauth'
-  s.add_development_dependency 'omniauth-ldap'
-  s.add_development_dependency 'pg'
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'rubocop'
 end
